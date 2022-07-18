@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>João Informática</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <style>
+        .bg-fundoAzulClaro {
+            background-color: #063d53;
+        }
+
+        .bg-fundoAzulEscuro {
+            background-color: #134671;
+        }
+    </style>
+</head>
+<body>
+    
+    <header class="bg-fundoAzulClaro p-3 pb-5 d-flex text-white">
+            <a class="h-75" href="index.html"><img  src="images/logo.png" alt=""></a>
+            <div class="d-flex w-75 mt-4">
+                <input class="form-control align-self-center h-25 w-75 mt-2 ms-5" type="text" id="pesquisar" placeholder="pesquisar...">
+                <div class="mt-5 d-flex">
+                    <a href="#"><img class="my-5 mx-3" src="assets/lupa.svg" alt="" style="width: 50px;"></a>
+                    <a href="#"><img class="my-5 mx-3" src="assets/user-alt.svg" alt="" style="width: 50px;"></a>
+                    <a href="#"><img class="my-5 mx-3" src="assets/shopping-cart.svg" alt="" style="width: 50px;"></a>
+                </div>
+            </div>
+    </header>
+    <nav class="navbar navbar-expand-sm navbar-danger bg-fundoAzulEscuro">
+        <div class="container-fluid">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="computadores.html" onclick="ativar(this)"><span style="font-size: 35px;">Computador</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="placa-mae.html" onclick="ativar(this)"><span style="font-size: 35px;">Placa-Mãe</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="processadores.html" onclick="ativar(this)"><span style="font-size: 35px;">Processador</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="placas_de_video.html" onclick="ativar(this)"><span style="font-size: 35px;">Placa-de-Vídeo</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+   
+    <main class="bg-fundoAzulClaro pt-4">
+
+        <div class="container bg-fundoAzulEscuro">
+            <div id="banner1" class="carousel slide mx-auto" data-bs-ride="carousel">
+                <div id="indicadores" class="carousel-indicators">
+                    <button type="buttton" data-bs-target="#banner1" data-bs-slide-to="0" class="active"></button>
+                    <button type="buttton" data-bs-target="#banner1" data-bs-slide-to="1"></button>
+                    <button type="buttton" data-bs-target="#banner1" data-bs-slide-to="2"></button>
+                </div>
+                <div id="imagens" class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/banner-whatsapp-gallery-gallery-img-2021-08-06-12-56-45.jpg" class="d-block w-100" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/BANNER-HP-gallery-img-2021-08-06-12-43-16.jpg" class="d-block w-100" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/BANNEREDRAGON-gallery-img-2021-08-08-20-30-11.jpg" class="d-block w-100" alt="">
+                    </div>
+                </div>
+                <div id="contolres">
+                    <button type="button" class="carousel-control-prev" data-bs-target="#banner1" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button type="button" class="carousel-control-next" data-bs-target="#banner1" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="d-flex p-2 text-white justify-content-around">
+                <div>
+                    <h4>Entrega Rápida</h4>
+                    <p>Despacho imediato</p>
+                </div>
+                <div>
+                    <h4>Desconto de 15%</h4>
+                    <p>no boleto bancário em toda a loja</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container bg-white p-5">
+            <div id="banner2" class="carousel slide mx-auto" data-bs-ride="carousel">
+                <div id="indicadores" class="carousel-indicators">
+                    <button type="buttton" data-bs-target="#banner2" data-bs-slide-to="0" class="active bg-primary"></button>
+                    <button type="buttton" data-bs-target="#banner2" data-bs-slide-to="1"></button>
+                    <button type="buttton" data-bs-target="#banner2" data-bs-slide-to="2"></button>
+                </div>
+                <div id="itens" class="carousel-inner mb-5 text-center">
+                    <h2 class="mb-5">Você precisa ver isso!</h2>
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="card col-3 text-center">
+                                <img src="images/msi_ventus.jpg" alt="">
+                                <h3>Placa de Vídeo MSI Ventus Geforce RTX 3060 12GB GDDR6 192bits</h3>
+                                <h5>R$3.999,00</h5>
+                                <p>em 12x de R$333,25 sem juros</p>
+                                <h4 class="text-primary">ou R$3.399,15 à vista</h4>
+                                <button type="button" class="btn btn-primary btn-lg mt-auto">COMPRAR</button>
+                            </div>
+                            <div class="card col-3 text-center">
+                                <img src="images/teclado.jpg" alt="">
+                                <h3>Teclado Logitech Sem Fio Touch K400 Plus 920-007125
+                                </h3>
+                                <h5>R$205,00</h5>
+                                <p>em 2x de R$102,50 sem juros</p>
+                                <h4 class="text-primary">ou
+                                    R$174,25 à vista</h4>
+                                <button type="button" class="btn btn-primary btn-lg mt-auto">COMPRAR</button>
+                            </div>
+                            <div class="card col-3 text-center">
+                                <img src="images/notebook.jpg" alt="">
+                                <h3>Notebook Compaq Presario CQ27, Core i3-5005u, 4GB RAM, SSD 120GB, W10H,Tela 14" - Preto
+                                </h3>
+                                <h5>R$2.965,00
+                                </h5>
+                                <p>em 12x de R$247,08 sem juros
+                                </p>
+                                <h4 class="text-primary">ou
+                                    R$2.520,25 à vista
+                                </h4>
+                                <button type="button" class="btn btn-primary btn-lg mt-auto">COMPRAR</button>
+                            </div>
+                            <div class="card col-3 text-center">
+                                <img src="images/ironwolf_3tb-site_2.jpg" alt="">
+                                <h3>HD para Desktop Seagate NAS IronWolf 3TB SATA3 5900RPM 256MB
+                                </h3>
+                                <h5>R$949,00</h5>
+                                <p>em 9x de R$105,44 sem juros
+                                </p>
+                                <h4 class="text-primary">ou
+                                    R$806,65 à vista
+                                </h4>
+                                <button type="button" class="btn btn-primary btn-lg mt-auto">COMPRAR</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="card col-3 text-center">
+                                <img src="images/fone.jpg" alt="">
+                                <h3>Headset USB Gamer Galax Sonar-01 RGB 7.1 Virtual</h3>
+                                <h5>R$325,00</h5>
+                                <p>em 3x de R$108,33 sem juros</p>
+                                <h4 class="text-primary">ou
+                                    R$276,25 à vista</h4>
+                                <button type="button" class="btn btn-primary btn-lg mt-auto">COMPRAR</button>
+                            </div>
+                            <div class="card col-3 text-center">
+                                <img src="images/webcam.jpg" alt="">
+                                <h3>WebCam Logitech C922 Pro Stream HD 1080p 960-001087
+                                </h3>
+                                <h5>R$649,90</h5>
+                                <p>em 6x de R$108,32 sem juros</p>
+                                <h4 class="text-primary">ou
+                                    R$552,42 à vista</h4>
+                                <button type="button" class="btn btn-primary btn-lg mt-auto">COMPRAR</button>
+                            </div>
+                            <div class="card col-3 text-center">
+                                <img src="images/roteador.jpg" alt="">
+                                <h3>Roteador Mesh Tenda Wireless Dual Band 1200 Mbps Nova MW6 c/ 2 Un.
+                                </h3>
+                                <h5>R$865,79
+                                </h5>
+                                <p>em 8x de R$108,22 sem juros
+                                </p>
+                                <h4 class="text-primary">ou
+                                    R$735,92 à vista
+                                </h4>
+                                <button type="button" class="btn btn-primary btn-lg mt-auto">COMPRAR</button>
+                            </div>
+                            <div class="card col-3 text-center">
+                                <img src="images/placa-mae.jpg" alt="">
+                                <h3>Placa Mãe Asus TUF Gaming Z690-PLUS D4, Aura Sync ARGB Gen2, LGA1700, DDR4, M.2, USB 3.2
+                                </h3>
+                                <h5>R$1.990,00</h5>
+                                <p>em 12x de R$165,83 sem juros
+                                </p>
+                                <h4 class="text-primary">ou
+                                    R$1.691,50 à vista
+                                </h4>
+                                <button type="button" class="btn btn-primary btn-lg mt-auto">COMPRAR</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="card col-3 text-center">
+                                <img src="images/msi_ventus.jpg" alt="">
+                                <h3>Memória Corsair Vengeance 32GB (2x16GB) DDR5 4800Mhz CL40 Preta</h3>
+                                <h5>R$2.399,00</h5>
+                                <p>em 12x de R$199,92 sem juros</p>
+                                <h4 class="text-primary">ou
+                                    R$2.039,15 à vista</h4>
+                                <button type="button" class="btn btn-primary btn-lg mt-auto">COMPRAR</button>
+                            </div>
+                            <div class="card col-3 text-center">
+                                <img src="images/fone.jpg" alt="">
+                                <h3>Microfone Gamer Articulado C3tech MI-G100, preto
+                                </h3>
+                                <h5>R$129,00</h5>
+                                <p>em 1x de R$129,00 sem juros</p>
+                                <h4 class="text-primary">ou
+                                    R$109,65 à vista</h4>
+                                <button type="button" class="btn btn-primary btn-lg mt-auto">COMPRAR</button>
+                            </div>
+                            <div class="card col-3 text-center">
+                                <img src="images/mouse.jpg" alt="">
+                                <h3>Mouse Gamer KWG Orion P1 Double RGB
+                                </h3>
+                                <h5>R$118,00
+                                </h5>
+                                <p>em 1x de R$118,00 sem juros
+                                </p>
+                                <h4 class="text-primary">ou
+                                    R$100,30 à vista
+                                </h4>
+                                <button type="button" class="btn btn-primary btn-lg mt-auto">COMPRAR</button>
+                            </div>
+                            <div class="card col-3 text-center">
+                                <img src="images/gabinete.jpg" alt="">
+                                <h3>Gabinete Mid Tower Pcyes Nova Plus Full RGB, Lateral em Acrílico, sem Fonte
+                                </h3>
+                                <h5>R$525,00</h5>
+                                <p>em 5x de R$105,00 sem juros
+                                </p>
+                                <h4 class="text-primary">ou
+                                    R$446,25 à vista
+                                </h4>
+                                <button type="button" class="btn btn-primary btn-lg mt-auto">COMPRAR</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="contolres">
+                    <button type="button" class="carousel-control-prev" data-bs-target="#banner2" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button type="button" class="carousel-control-next" data-bs-target="#banner2" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+        
+        </div>
+    
+        <div class="container bg-white text-center">
+            <img class="w-100 mb-5" src="images/baterias.jpg" alt="">
+            <h2>Olha o que acabou de chegar...</h2>
+            <div class="row p-5">
+                <div class="card col-3 text-center">
+                    <img src="images/chegou-1.jpg" alt="">
+                    <h3>Placa de Vídeo Duex Geforce G210 1GB DDR3 64Bits Low Profile</h3>
+                    <h5>R$231,00</h5>
+                    <p>em 2x de R$115,50 sem juros</p>
+                    <h4 class="text-primary">ou
+                        R$196,35 à vista</h4>
+                    <button type="button" class="btn btn-primary btn-lg mt-auto">COMPRAR</button>
+                </div>
+                <div class="card col-3 text-center">
+                    <img src="images/chegou-2.jpg" alt="">
+                    <h3>Memória DDR3L 8GB PC1600 Samsung - D316002RX8LU
+                    </h3>
+                    <h5>R$227,00</h5>
+                    <p>em 2x de R$113,50 sem juros
+                    </p>
+                    <h4 class="text-primary">ou
+                        R$192,95 à vista</h4>
+                    <button type="button" class="btn btn-primary btn-lg mt-auto">COMPRAR</button>
+                </div>
+                <div class="card col-3 text-center">
+                    <img src="images/chegou-3.png" alt="">
+                    <h3>Ssd Crucial P2 250GB M.2 NVME, Leitura 2100MB/s, Gravação 1150MB/s
+                    </h3>
+                    <h5>R$418,00</h5>
+                    <p>em 4x de R$104,50 sem juros
+                    </p>
+                    <h4 class="text-primary">ou
+                        R$355,30 à vista
+                    </h4>
+                    <button type="button" class="btn btn-primary btn-lg mt-auto">COMPRAR</button>
+                </div>
+                <div class="card col-3 text-center">
+                    <img src="images/chegou-4.jpg" alt="">
+                    <h3>Memória Adata 4GB DDR4 PC2400 CL17
+                    </h3>
+                    <h5>R$129,90</h5>
+                    <p>em 1x de R$129,90 sem juros
+                    </p>
+                    <h4 class="text-primary">ou
+                        R$110,42 à vista            
+                    </h4>
+                    <button type="button" class="btn btn-primary btn-lg mt-auto">COMPRAR</button>
+                </div>
+            </div>
+
+            </div>
+
+            <div class="container bg-white text-center">
+                <img class="w-100 mb-5" src="images/baterias.jpg" alt="">
+                <h2>Mais Vendidos</h2>
+                <div class="row p-5">
+                    <div class="card col-3 text-center">
+                        <img src="images/kratos_m1_600b_slogan.png" alt="">
+                        <h3>Fonte Gamdias Kratos M1 600w ATX 80 Plus Bronze, com iluminação RGB</h3>
+                        <h5>R$450,00</h5>
+                        <p>em 4x de R$112,50 sem juros</p>
+                        <h4 class="text-primary">ou
+                            R$382,50 à vista</h4>
+                        <button type="button" class="btn btn-primary btn-lg mt-auto">COMPRAR</button>
+                    </div>
+                    <div class="card col-3 text-center">
+                        <img src="images/placa-video-8.jpg" alt="">
+                        <h3>Placa de Vídeo Galax GeForce RTX 3080 SG 1-Clip Booster 10GB GDDR6X 320bits
+                        </h3>
+                        <h5>R$9.645,00</h5>
+                        <p>em 12x de R$803,75 sem juros</p>
+                        <h4 class="text-primary">ou
+                            R$8.198,25 à vista</h4>
+                        <button type="button" class="btn btn-primary btn-lg mt-auto">COMPRAR</button>
+                    </div>
+                    <div class="card col-3 text-center">
+                        <img src="images/vx190-12.jpg" alt="">
+                        <h3>Monitor 19" Led VXpro VX190C HDMI e VGA, Vesa, Preto
+                        </h3>
+                        <h5>R$739,00</h5>
+                        <p>em 7x de R$105,57 sem juros
+                        </p>
+                        <h4 class="text-primary">ou
+                            R$628,15 à vista
+                        </h4>
+                        <button type="button" class="btn btn-primary btn-lg mt-auto">COMPRAR</button>
+                    </div>
+                    <div class="card col-3 text-center">
+                        <img src="images/cs900_240gb.jpg" alt="">
+                        <h3>SSD PNY CS900 240GB 2,5" SATA III
+                        </h3>
+                        <h5>R$245,00</h5>
+                        <p>em 2x de R$122,50 sem juros
+                        </p>
+                        <h4 class="text-primary">ou
+                            R$208,25 à vista
+                        </h4>
+                        <button type="button" class="btn btn-primary btn-lg mt-auto">COMPRAR</button>
+                    </div>
+                </div>
+                <div class="row p-5">
+                    <div class="card col-3 text-center">
+                        <img src="images/prizi_monitor_pz1700_01.jpg" alt="">
+                        <h3>Monitor Led Pctop 17" Vga E Hdmi Preto - MLP170
+                        </h3>
+                        <h5>R$559,00</h5>
+                        <p>em 5x de R$111,80 sem juros
+                        </p>
+                        <h4 class="text-primary">ou
+                            R$475,15 à vista
+                        </h4>
+                        <button type="button" class="btn btn-primary btn-lg mt-auto">COMPRAR</button>
+                    </div>
+                    <div class="card col-3 text-center">
+                        <img src="images/storm-z_angry_lado_2.jpg" alt="">
+                        <h3>PC Gamer Cromis PbAsus Intel i5-10400f, H510, 16GB DDR4, SSD 240GB, RX 560 4GB, Win10 Trial
+                        </h3>
+                        <h5>R$5.299,00</h5>
+                        <p>em 12x de R$441,58 sem juros
+                        </p>
+                        <h4 class="text-primary">ou
+                            R$4.504,15 à vista
+                        </h4>
+                        <button type="button" class="btn btn-primary btn-lg mt-auto">COMPRAR</button>
+                    </div>
+                    <div class="card col-3 text-center">
+                        <img src="images/11_4_3.jpg" alt="">
+                        <h3>Placa Mãe Asus Prime Intel H510m-e R2.0/br, LGA1200, Ddr4 2666mhz, M.2, Usb 3.1
+                        </h3>
+                        <h5>R$674,00</h5>
+                        <p>em 6x de R$112,33 sem juros</p>
+                        <h4 class="text-primary">ou
+                            R$572,90 à vista</h4>
+                        <button type="button" class="btn btn-primary btn-lg mt-auto">COMPRAR</button>
+                    </div>
+                    <div class="card col-3 text-center">
+                        <img src="images/cadeira-gamer-elements-gaming-veda-ignis-vermelha_111850.jpg" alt="">
+                        <h3>Cadeira Gamer Elements Veda Ignis, Vermelha e Preta
+                        </h3>
+                        <h5>R$1.293,00</h5>
+                        <p>em 12x de R$107,75 sem juros</p>
+                        <h4 class="text-primary">ou
+                            R$1.099,05 à vista</h4>
+                        <button type="button" class="btn btn-primary btn-lg mt-auto">COMPRAR</button>
+                    </div>
+                </div>
+        </div>
+        <section class="container text-white ">
+            <header class="d-flex mt-3 bg-fundoAzulEscuro p-4 justify-content-between">
+                <img  src="images/logo.png" alt="" style="width: 85px;">
+                <h5 class="mt-3">NOVIDADES & PROMOÇÕES</h5>
+                <h4 class="mt-2">|</h4>
+                <h6 class="mt-3">CADASTRE-SE E RECEBA OFERTAS E NOVIDADES EXCLUSIVAS</h6>
+                <input class="form-control w-25 ms-2" type="email" placeholder="email" id="email">
+                <button class="btn btn-primary">Assinar</button>
+            </header>
+            <main class="p-4" style="background-color: #00162B;">
+                <div class="row">
+                    <div class="col-4">
+                        <h4>ENDEREÇO</h4>
+                        <p>Rua Xavier Pinheiro, 142
+                            Vila São Bento, SJC - SP</p>
+                        <h6>De Seg. à Sex: Das 09h às 18:00h.</h6>
+                        <h4>ATENDIMENTO:</h4>
+                        <p>(12) 3222-6127</p>
+                        <h4>WHATSAPP:</h4>
+                        <p>(12) 98881-5499</p>
+                        <h4>E-MAIL:</h4>
+                        <p>joaopedro@joaoinformatica.com.br</p>
+                    </div>
+                    <div class="col-8">
+                        <div class="row">
+                            <div class="col-3">
+                                <h4>AJUDA</h4>
+                                <p>Dúvidas Frequentes</p>
+                                <p>Fale Conosco</p>
+                                <p>Política de Privacidade</p>
+                            </div>
+                            <div class="col-9 text-center">
+                                <h4>INSTITUCIONAL</h4>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <p>Fazer Login ou Cadastro</p>
+                                        <p>Minha Conta</p>
+                                        <p>Meus Pedidos</p>
+                                    </div>
+                                    <div class="col-4">
+                                        <p>Sobre a Oceano Informática</p>
+                                        <p>Políticas</p>
+                                        <p>Blog</p>
+                                    </div>
+                                    <div class="col-4">
+                                        <p class="mt-4">Trabalhe Conosco</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <hr>
+                            <div class="col-6">
+                                <h4>FORMAS DE PAGAMENTO</h4>
+                                <div>
+                                    <img src="assets/visa..png" alt="">
+                                    <img src="assets/hiper.png" alt="">
+                                    <img src="assets/master.png" alt="">
+                                    <img src="assets/aura.png" alt="">
+                                    <img src="assets/dinners.png" alt="">
+                                    <img src="assets/american.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <h4>SEGURANÇA E QUALIDADE</h4>
+                                <p>Positive SSL</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </section>
+
+        <footer class="container text-white text-center">
+            Site desevolvido por João Pedro Carvalho dos Santos © 2022 - Todos os direitos reservados.
+        </footer>
+    </main>
+
+
+    <script>
+        const ativar = (elemento) => {
+            let itens = document.getElementsByClassName('nav-link')
+            for (i = 0; i < itens.length; i++) {
+                itens[i].classList.remove('active')
+            }
+            elemento.classList.add('active')
+        }
+    </script>
+
+
+</body>
+</html>
