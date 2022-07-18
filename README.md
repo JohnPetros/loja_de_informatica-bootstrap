@@ -9,7 +9,7 @@ Bootstrap é um framework web com código-fonte aberto para desenvolvimento de c
 
 ## Site "João Informática"
 ![João Informática - Google Chrome 18_07_2022 12_29_19](https://user-images.githubusercontent.com/93893533/179549902-4abd1a7a-bd3f-4846-a7d1-22f5488a268f.png)
-<h3><a href="https://johnpetros.github.io/loja_de_informatica-bootstrap/">Veja o Site funcionando</h3>
+<h3><a href="https://johnpetros.github.io/loja_de_informatica-bootstrap/">Veja o Site funcionando</a></h3>
 
 ## Como foi elaborado
 O site possui 4 páginas, sendo que todas tem a mesma estrutura de formatação com excessão da index, que possui componentes adicionais, como um banner rotativo. Cada página é dividida em três grandes partes: Header, Main e Footer. Todas as páginas possuem componentes como barra de navegação, cards, botões e containers. O design e as imagens do site foram baseados em um site de uma loja de informática real chamado <a href="https://www.oceanoinformatica.com.br/">oceanoinformatica</a> A parte mais divertida do trabalho foi fazer o último container da main da index, pois tive que usar CSS Grid avançado.
